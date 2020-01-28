@@ -151,7 +151,7 @@ public class BasicCustomAuthenticator extends BasicAuthenticator {
                 //Existing user
                 if (uuidIS == null) {
                     throw new AuthenticationFailedException("Invalid User");
-            } else if (!uuidIS.equals(uuidClient)) {
+                } else if (!uuidIS.equals(uuidClient)) {
                     throw new AuthenticationFailedException("UUID user sent and UUID in WSO2 IS does not match");
                 }
             }
